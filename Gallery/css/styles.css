@@ -1,0 +1,27 @@
+.gallery-home-photo {
+    width: 250px;
+    height: 150px !important;
+}
+
+.comment-avatar {
+    width: 65px;
+    height: 65px;
+    padding: 2px;
+}
+
+.comment-title {
+    margin-top: 10px;
+}
+
+.img-head {
+    width: 50% !important;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 1px solid black;
+}
+
+.pager li.active > a, .pager li.active > span{
+    background-color:rgb(228, 222, 222);
+    pointer-events:none;
+}
