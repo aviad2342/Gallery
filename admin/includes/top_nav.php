@@ -11,7 +11,7 @@ $user_messages = Message::find_user_messages($user_loged->id);
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../index.php">Visit Home Page</a>
+                <a class="navbar-brand" href="../index.php">Home Page</a>
             </div> 
 
             <!-- Top Menu Items -->

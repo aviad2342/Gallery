@@ -25,3 +25,15 @@
     background-color:rgb(228, 222, 222);
     pointer-events:none;
 }
+
+.text-left {
+    text-align: left;
+}
+  
+.text-right {
+    text-align: right;
+}
+  
+.text-center {
+    text-align: center;
+}

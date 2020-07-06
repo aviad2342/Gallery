@@ -35,7 +35,7 @@ $comments = Comment::find_comments_photo($photo->id);
             <div class="col-lg-12">
 
                 <!-- Title -->
-                <h1><?php echo $photo->title; ?></h1>
+                <h1 class="text-center"><?php echo $photo->title; ?></h1>
 
                 <!-- Author -->
                 <p class="lead">
