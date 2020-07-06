@@ -38,7 +38,7 @@ body {
 }
 .user-head .inbox-avatar img {
     border-radius: 4px;
-    height: -webkit-fill-available;
+    height: auto;
 }
 .user-head .user-name {
     display: inline-block;

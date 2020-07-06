@@ -18,7 +18,7 @@ $count = count($messages);
                   <!-- Navigation -->
                         <?php include("includes/inbox-navigation.php") ?>
                           <table id="myTable" class="table table-inbox table-hover">
-                            <tbody>
+                            <tbody class="">
                             <?php foreach ($messages as $message) : ?>
                               <tr class="<?php echo $message->getIsNew(); ?>" >
                                   <td class="inbox-small-cells">
