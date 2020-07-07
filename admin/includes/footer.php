@@ -6,7 +6,7 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
 
     <script type="text/javascript" src="simplelightbox-master/dist/simple-lightbox.js"></script>
     <!-- text editor -->

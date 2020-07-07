@@ -82,9 +82,30 @@ function ValidateEmail(input) {
     var email = $("#"+input).val();
     var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
     if (filter.test(email)) {
-        alert("ok");
+        $('#emailAlert').hide();
     } else {
-        alert("no");
+        $('#emailAlert').show();
     }
 }
+
+function hideAlert(input) {
+    $("#"+input).hide();
+}
+
+function revealPassword() {
+    $('#passwordIcon').toggleClass('glyphicon glyphicon-eye-close glyphicon glyphicon-eye-open');
+    if($('#passwordIcon').hasClass('glyphicon glyphicon-eye-open')){
+        $('#password').attr("type", "text");
+    } else {
+        $('#password').attr("type", "password");
+    }
+    
+}
+
+function openCalendar() {
+    $('#date').click();
+    
+}
+
+
 

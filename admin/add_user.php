@@ -87,6 +87,22 @@ if(isset($_POST['create'])) {
                 <input id="image_picker" type="file" name="profile_picture" onchange="readURL(this);">
             </div>
             <div class="form-group">
+                <div class="input-group input-group-lg">
+                    <span class="input-group-addon">
+                        <span class="fa fa-font"></span>
+                    </span>
+                    <input type="text" name="first_name" class="form-control" placeholder="First Name">
+                </div> 
+            </div>
+            <div class="form-group">
+                <div class="input-group input-group-lg">
+                    <span class="input-group-addon">
+                        <span class="fa fa-bold"></span>
+                    </span>
+                    <input type="text" name="last_name" class="form-control" placeholder="Last Name">
+                </div> 
+            </div>
+            <div class="form-group">
                  <div class="input-group input-group-lg">
                     <span class="input-group-addon">
                         <span class="glyphicon glyphicon-user"></span>
@@ -99,40 +115,24 @@ if(isset($_POST['create'])) {
                     <span class="input-group-addon">
                         @
                     </span>
-                    <input type="email" id="email" name="email" class="form-control" placeholder="Email" onblur="ValidateEmail('email')" onfocus="focusFunction()">
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Email" onblur="ValidateEmail('email')" onkeypress="hideAlert('emailAlert')" required>
                 </div> 
-                <span class="toggle"><small class="text-danger"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> invalid email address</small></span>
+                <span class="toggle" id="emailAlert" hidden><small class="text-danger"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> invalid email address</small></span>
             </div>
             <div class="form-group">
-                <div class='input-group input-group-lg date' id='datetimepicker'>
-                    <span class="input-group-addon">
+                <div class='input-group input-group-lg date' onclick="openCalendar()">
+                    <span class="input-group-addon btn">
                         <span class="glyphicon glyphicon-calendar"></span>
                     </span>
-                    <input type='date' name="date" class="form-control" value="1984-10-25"/> 
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="form-inline">
-                    <div class="input-group input-group-lg">
-                        <span class="input-group-addon">
-                            <span class="glyphicon glyphicon-user"></span>
-                        </span>
-                        <input type="text" name="first_name" class="form-control" placeholder="First Name">
-                    </div> 
-                    <div class="input-group input-group-lg col-lg-offset-1">
-                        <span class="input-group-addon">
-                            <span class="glyphicon glyphicon-user"></span>
-                        </span>
-                        <input type="text" name="last_name" class="form-control" placeholder="Last Name">
-                    </div> 
+                    <input type='date' id="date" name="date" class="form-control" value="1984-10-25"/> 
                 </div>
             </div>
             <div class="form-group">
                 <div class="input-group input-group-lg">
-                    <span class="input-group-addon">
-                        <span class="glyphicon glyphicon-eye-close"></span>
+                    <span class="input-group-addon btn" data-toggle="tooltip" data-placement="left" title="Click to show password"  onclick="revealPassword()">
+                        <span id="passwordIcon" class="glyphicon glyphicon-eye-close"></span>
                     </span>
-                    <input type="password" name="password" class="form-control" placeholder="Password">
+                    <input type="password" id="password" name="password" class="form-control" placeholder="Password">
                 </div> 
             </div>
             <div class="form-group">

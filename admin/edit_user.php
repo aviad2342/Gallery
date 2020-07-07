@@ -96,6 +96,22 @@ if(isset($_POST['update'])) {
             <div class="form-group">
                 <div class="input-group input-group-lg">
                     <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                    <input type="text" name="first_name" class="form-control" placeholder="First Name" value="<?php echo $user->first_name; ?>">
+                 </div> 
+            </div>
+            <div class="form-group">
+                <div class="input-group input-group-lg">
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-user"></span>
+                    </span>
+                    <input type="text" name="last_name" class="form-control" placeholder="Last Name" value="<?php echo $user->last_name; ?>">
+                </div> 
+            </div>
+            <div class="form-group">
+                <div class="input-group input-group-lg">
+                    <span class="input-group-addon">
                         <span class="glyphicon glyphicon-user"></span>
                     </span>
                     <input type="text" name="username" class="form-control" placeholder="User Name" value="<?php echo $user->username; ?>">
@@ -115,22 +131,6 @@ if(isset($_POST['update'])) {
                         <span class="glyphicon glyphicon-calendar"></span>
                     </span>
                     <input type='date' name="date" class="form-control" value="<?php echo $user->date; ?>"/> 
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="form-inline">
-                    <div class="input-group input-group-lg">
-                        <span class="input-group-addon">
-                            <span class="glyphicon glyphicon-user"></span>
-                        </span>
-                        <input type="text" name="first_name" class="form-control" placeholder="First Name" value="<?php echo $user->first_name; ?>">
-                    </div> 
-                    <div class="input-group input-group-lg col-lg-offset-1">
-                        <span class="input-group-addon">
-                            <span class="glyphicon glyphicon-user"></span>
-                        </span>
-                        <input type="text" name="last_name" class="form-control" placeholder="Last Name" value="<?php echo $user->last_name; ?>">
-                    </div> 
                 </div>
             </div>
             <div class="form-group">
