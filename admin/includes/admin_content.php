@@ -30,7 +30,7 @@
                   <a href="albums.php">
                       <div class="panel-footer">
                         <span class="pull-left">View Details</span> 
-                     <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span> 
+                     <span class="pull-right"><i class="fa fa-arrow-circle-right fa-2x"></i></span> 
                           <div class="clearfix"></div>
                       </div>
                   </a>
@@ -53,7 +53,7 @@
                   <a href="photos.php">
                       <div class="panel-footer">
                           <span class="pull-left">Total Photos in Gallery</span>
-                          <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                          <span class="pull-right"><i class="fa fa-arrow-circle-right fa-2x"></i></span>
                           <div class="clearfix"></div>
                       </div>
                   </a>
@@ -77,7 +77,7 @@
                   <a href="users.php">
                       <div class="panel-footer">
                           <span class="pull-left">Total Users</span>
-                          <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                          <span class="pull-right"><i class="fa fa-arrow-circle-right fa-2x"></i></span>
                           <div class="clearfix"></div>
                       </div>
                   </a>
@@ -100,7 +100,7 @@
                   <a href="comments.php">
                       <div class="panel-footer">
                           <span class="pull-left">Total Comments</span>
-                          <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                          <span class="pull-right"><i class="fa fa-arrow-circle-right fa-2x"></i></span>
                           <div class="clearfix"></div>
                       </div>
                   </a>

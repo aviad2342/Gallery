@@ -65,6 +65,9 @@ $comments = Comment::find_Comments_photo($_GET['id']);
                         <td><?php echo $comment->author_name; ?>
                             <div class="action_links">
                                 <br>
+                                <?php if($comment->author_id === $session->user_id) : ?>
+                                    <a class="btn btn-warning" href="edit_comment.php?id=<?php echo $comment->id; ?>">Edit</a>
+                                <?php endif; ?> 
                                 <a class="btn btn-danger" href="delete_photo_comment.php?id=<?php echo $comment->id; ?>">Delete</a>
                             </div>
                         </td>

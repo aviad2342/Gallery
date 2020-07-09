@@ -57,15 +57,14 @@ if(empty($_GET['id'])) {
                     <div class="col-lg-2 col-md-6">
                         <div class="panel">
                             <div class="panel-heading text-center">
-                            <img class="admin-photos-thumbnail" src="<?php echo $image->picture_path(); ?>" alt="">
+                                <img class="admin-photos-thumbnail" src="<?php echo $image->picture_path(); ?>" alt="">
                             </div>
                                 <div class="panel-footer">
-                                <a class="delete_link btn btn-danger btn-block" href="delete_image.php?id=<?php echo $image->id; ?>&album_id=<?php echo $_GET['id']; ?>"><i class="fa fa-trash"></i> Delete</a>
-                                    <div class="clearfix"></div>
-                                </div>
-                             
-                            </div>
-                         </div>                                
+                                    <a class="delete_link btn btn-danger btn-block" href="delete_image.php?id=<?php echo $image->id; ?>&album_id=<?php echo $_GET['id']; ?>"><i class="fa fa-trash"></i> Delete</a>
+                                <div class="clearfix"></div>
+                            </div>  
+                        </div>
+                    </div>                                
                  <?php endforeach; ?> 
           </div> 
           <hr>

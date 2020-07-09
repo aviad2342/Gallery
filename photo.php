@@ -60,22 +60,6 @@ $comments = Comment::find_comments_photo($photo->id);
                 
                 <hr>
 
-                <!-- Comments Form -->
-                <div class="well">
-                    <h4>Leave a Comment:</h4>
-                    <form role="form" method="post">
-                        <div class="form-group">
-                            <input type="text" name="author" class="form-control" value="<?php echo $user_full_name; ?>" disabled>
-                        </div>
-                        <div class="form-group">
-                            <textarea name="body" class="form-control" rows="3"></textarea>
-                        </div>
-                        <button type="submit" name="submit" class="btn btn-primary">Submit</button>
-                    </form>
-                </div>
-
-                <hr>
-
                 <!-- Posted Comments -->
                 <?php foreach ($comments as $comment): ?>
 
@@ -92,6 +76,22 @@ $comments = Comment::find_comments_photo($photo->id);
                     </div>
                 </div>
               <?php endforeach ?> 
+
+              <hr>
+
+                <!-- Comments Form -->
+                <div class="well">
+                    <h4>Leave a Comment:</h4>
+                    <form role="form" method="post">
+                        <div class="form-group">
+                            <input type="text" name="author" class="form-control" value="<?php echo $user_full_name; ?>" disabled>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="body" class="form-control" rows="3"></textarea>
+                        </div>
+                        <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
             </div>
         </div><!-- /.row -->
             <!-- Blog Sidebar Widgets Column -->

@@ -47,7 +47,7 @@ if(empty($_GET['id'])) {
     <div class="col-lg-12">
         <h1 class="page-header">
         Edit Album
-            <small>Upload Image</small>
+            <small>Edit Your Album</small>
         </h1>
         <ol class="breadcrumb">
             <li>

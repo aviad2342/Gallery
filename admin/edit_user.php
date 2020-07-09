@@ -135,10 +135,10 @@ if(isset($_POST['update'])) {
             </div>
             <div class="form-group">
                 <div class="input-group input-group-lg">
-                    <span class="input-group-addon">
-                        <span class="glyphicon glyphicon-eye-close"></span>
+                    <span class="input-group-addon" data-toggle="tooltip" data-placement="left" title="Click to show password"  onclick="revealPassword()">
+                        <span id="passwordIcon" class="glyphicon glyphicon-eye-close"></span>
                     </span>
-                    <input type="password" name="password" class="form-control" placeholder="New Password" value="<?php echo $user->password; ?>">
+                    <input type="password" name="password" id="password" class="form-control" placeholder="New Password" value="<?php echo $user->password; ?>">
                 </div> 
             </div>
             <div class="form-group">
