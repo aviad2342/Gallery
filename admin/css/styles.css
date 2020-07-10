@@ -5,6 +5,14 @@
   border-radius: 5px;
 }
 
+.gallery-image-thumbnail {
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  width:  100px;
+  height: 100px;
+  object-fit: cover;
+}
+
 .profile-image-circle {
   width: 25px;
   height: 25px;
@@ -13,6 +21,12 @@
 .profile-image-img {
   width: 150px;
   height: 150px;
+}
+
+
+.login-profile-image-img {
+  width: 200px;
+  height: 200px;
 }
 
 .profile-image-img.img-thumbnail { 
@@ -96,6 +110,10 @@
     padding: 2px;
 }
 
+.btn-delete-image {
+  width: fit-content;
+}
+
 
    
    /********/
@@ -127,3 +145,6 @@
     width: 100%;
   }
   
+  .fit-content {
+    width: fit-content;
+  }

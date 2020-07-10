@@ -79,7 +79,6 @@ if(isset($_POST['submit'])) {
             <img id="preview-image" class="img-responsive update-Profile-Picture img-thumbnail" src="" alt="">
         </div>
         <div class="col-md-6">
-        <?php echo $message; ?>
         <form action="upload.php" method="post" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="title">Title</label>

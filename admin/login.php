@@ -32,12 +32,14 @@ if(isset($_POST['submit'])) {
 <div class="col-md-4 col-md-offset-3">
 
 <form id="login-id" action="" method="post">
-
+<div class="panel-heading text-center">
+    <img class="login-profile-image-img img-circle img-thumbnail img-responsive" src="<?php echo DEFAULT_PROFILE_PICTURE; ?>" alt="" id="loginProfileImage">
+</div>
 <div class="input-group input-group-lg">
   <span class="input-group-addon">
     <span class="glyphicon glyphicon-user"></span>
   </span>
-  <input type="text" class="form-control" name="username" 
+  <input type="text" class="form-control" name="username" id="loginUserName"
     value="<?php echo htmlentities($username); ?>" placeholder="Enter username" require>
 </div>
 <br>
@@ -57,3 +59,4 @@ if(isset($_POST['submit'])) {
 </div>
 </form>
 </div>
+<?php include("includes/footer.php"); ?>

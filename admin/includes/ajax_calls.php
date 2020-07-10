@@ -11,4 +11,14 @@ if(isset($_POST['photo_id'])) {
     $photo = Photo::find_by_id($_POST['photo_id']);
 }
 
+if(isset($_GET['username'])) {
+    $user = User::find_by_username($_GET['username']);
+    if(empty($user)){
+        print DEFAULT_PROFILE_PICTURE;
+    } else {
+        print $user->getProfilePicture();
+    }
+    
+}
+
 ?>

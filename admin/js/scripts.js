@@ -50,6 +50,20 @@ $(document).ready(function(){
         });
     });
 
+    $("#loginUserName").blur(function(){
+        var username = $("#loginUserName").val();
+        $.ajax({
+            url: "includes/ajax_calls.php",
+            data: {username: username},
+            type: "GET",
+            success: function(data) {
+                if(!data.error) {
+                    $('#loginProfileImage').attr('src', data);
+                }
+            }
+        });
+    });
+
     $(".info-box-header").click(function(){
         $('.inside').slideToggle("fast");
         $('#toggle').toggleClass(" glyphicon-menu-down glyphicon , glyphicon-menu-up glyphicon");

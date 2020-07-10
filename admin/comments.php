@@ -40,7 +40,9 @@ $comments = Comment::find_all();
                 <i class="fa fa-comment"></i> Comments
             </li>
         </ol>
-        <p class="bg-success"><?php echo $message; ?></p>
+        <?php if(!empty($message)) : ?>
+            <p class="bg-success"><?php echo $message; ?></p>
+        <?php endif; ?> 
         <div class="col-md-12">
             <table class="table table-hover">
                 <thead>

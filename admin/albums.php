@@ -40,20 +40,22 @@ $albums = Album::find_user_albums($session->user_id);
                         <i class="fa fa-th"></i> Albums
                     </li>
                 </ol>
-                <p class="bg-success"><?php echo $message; ?></p>
+                <?php if(!empty($message)) : ?>
+                   <p class="bg-success"><?php echo $message; ?></p>
+                <?php endif; ?> 
                 <a href="create_album.php" class="btn btn-primary"><i class="fa fa-plus-circle"></i> Create New Album</a>
                 <br><br>
          <div class="row">
             <?php foreach ($albums as $album) : ?>
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-4 col-md-6 fit-content">
                         <div class="panel panel-primary">
                             <div class="panel-heading">
                                 <div class="row">
-                                    <div class="col-xs-9 text-left">
+                                    <div class="col-xs-8 text-left fit-content">
                                         <div class="huge"><?php echo $album->title; ?></div>
                                         <div><span class="glyphicon glyphicon-time"></span> Created at <?php echo $album->getDate(); ?></div>
                                     </div>
-                                    <div class="col-xs-3">
+                                    <div class="col-xs-1 text-right">
                                         <i class="fa fa-image fa-5x"></i>
                                     </div>
                                 </div>
@@ -61,7 +63,7 @@ $albums = Album::find_user_albums($session->user_id);
                             <a href="view_images.php?id=<?php echo $album->id; ?>">
                                 <div class="panel-footer">
                                     <span class="pull-left">View Details</span> 
-                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span> 
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right fa-2x"></i></span> 
                                     <div class="clearfix"></div>
                                 </div>
                              </a>

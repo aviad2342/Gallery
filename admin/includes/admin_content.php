@@ -22,14 +22,14 @@
                               <i class="fa fa-th fa-5x"></i>
                           </div>
                           <div class="col-xs-9 text-right">
-                              <div class="huge"><?php echo Album::countRecords($session->user_id); ?></div>
+                              <div class="huge-panel"><?php echo Album::countRecords($session->user_id); ?></div>
                               <div>Albums</div>
                           </div>
                       </div>
                   </div>
                   <a href="albums.php">
                       <div class="panel-footer">
-                        <span class="pull-left">View Details</span> 
+                        <span class="pull-left">View Albums</span> 
                      <span class="pull-right"><i class="fa fa-arrow-circle-right fa-2x"></i></span> 
                           <div class="clearfix"></div>
                       </div>
@@ -45,14 +45,14 @@
                               <i class="fa fa-photo fa-5x"></i>
                           </div>
                           <div class="col-xs-9 text-right">
-                              <div class="huge"><?php echo Photo::countRecords(); ?></div>
+                              <div class="huge-panel"><?php echo Photo::countRecords(); ?></div>
                               <div>Photos</div>
                           </div>
                       </div>
                   </div>
                   <a href="photos.php">
                       <div class="panel-footer">
-                          <span class="pull-left">Total Photos in Gallery</span>
+                          <span class="pull-left">View Photos in Gallery</span>
                           <span class="pull-right"><i class="fa fa-arrow-circle-right fa-2x"></i></span>
                           <div class="clearfix"></div>
                       </div>
@@ -69,14 +69,14 @@
                               <i class="fa fa-user fa-5x"></i>
                           </div>
                           <div class="col-xs-9 text-right">
-                              <div class="huge"><?php echo User::countRecords(); ?></div>
+                              <div class="huge-panel"><?php echo User::countRecords(); ?></div>
                               <div>Users</div>
                           </div>
                       </div>
                   </div>
                   <a href="users.php">
                       <div class="panel-footer">
-                          <span class="pull-left">Total Users</span>
+                          <span class="pull-left">View Users</span>
                           <span class="pull-right"><i class="fa fa-arrow-circle-right fa-2x"></i></span>
                           <div class="clearfix"></div>
                       </div>
@@ -92,14 +92,14 @@
                               <i class="fa fa-fw fa-edit fa-5x"></i>
                           </div>
                           <div class="col-xs-9 text-right">
-                              <div class="huge"><?php echo Comment::countRecords(); ?></div>
+                              <div class="huge-panel"><?php echo Comment::countRecords(); ?></div>
                               <div>Comments</div>
                           </div>
                       </div>
                   </div>
                   <a href="comments.php">
                       <div class="panel-footer">
-                          <span class="pull-left">Total Comments</span>
+                          <span class="pull-left">View Comments</span>
                           <span class="pull-right"><i class="fa fa-arrow-circle-right fa-2x"></i></span>
                           <div class="clearfix"></div>
                       </div>

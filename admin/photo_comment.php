@@ -47,7 +47,6 @@ $comments = Comment::find_Comments_photo($_GET['id']);
                 <i class="fa fa-comment"></i> Comments
             </li>
         </ol>
-        <p class="bg-success"><?php echo $message; ?></p>
         <div class="col-md-12">
             <table class="table table-hover">
                 <thead>

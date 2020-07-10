@@ -50,19 +50,18 @@ if(empty($_GET['id'])) {
                 <i class="fa fa-picture-o"></i> Delete Photos
             </li>
         </ol>
-        <p class="bg-success"><?php echo $message; ?></p>
+        <?php if(!empty($message)) : ?>
+             <p class="bg-success"><?php echo $message; ?></p>
+        <?php endif; ?> 
 
         <div class="row">
             <?php foreach ($images as $image) : ?>
-                    <div class="col-lg-2 col-md-6">
-                        <div class="panel">
+                    <div class="col-lg-3 col-md-3 col-xs-3">
+                        <div class="panel text-center">
                             <div class="panel-heading text-center">
-                                <img class="admin-photos-thumbnail" src="<?php echo $image->picture_path(); ?>" alt="">
+                                <img class="gallery-image-thumbnail" src="<?php echo $image->picture_path(); ?>" alt="">
                             </div>
-                                <div class="panel-footer">
-                                    <a class="delete_link btn btn-danger btn-block" href="delete_image.php?id=<?php echo $image->id; ?>&album_id=<?php echo $_GET['id']; ?>"><i class="fa fa-trash"></i> Delete</a>
-                                <div class="clearfix"></div>
-                            </div>  
+                            <a class="btn-delete-image btn btn-danger" href="delete_image.php?id=<?php echo $image->id; ?>&album_id=<?php echo $_GET['id']; ?>"><i class="fa fa-trash"></i> Delete</a>
                         </div>
                     </div>                                
                  <?php endforeach; ?> 

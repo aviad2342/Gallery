@@ -49,8 +49,6 @@ if(empty($_GET['id'])) {
                     </li>
                 </ol>
 
-                <p class="bg-success"><?php echo $message; ?></p>
-
                 <div class="text-center">
                     <!-- Title -->
                     <h1 class="album-title"><?php echo $album->title; ?></h1>

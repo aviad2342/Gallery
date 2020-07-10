@@ -167,6 +167,11 @@ ul.alert-dropdown {
 
 .huge {
     font-size: 40px;
+    width: max-content;
+}
+
+.huge-panel {
+    font-size: 40px;
 }
 
 .panel-green {

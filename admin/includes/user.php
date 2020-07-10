@@ -18,7 +18,7 @@ class User extends Db_object {
     
 
     public function getProfilePicture() {
-        return empty($this->profile_picture) ? $this->default_image : $this->upload_directory.DS.$this->profile_picture;
+        return empty($this->profile_picture) ? $this->upload_directory.DS.$this->default_image : $this->upload_directory.DS.$this->profile_picture;
     }
 
     public function picture_path() {
@@ -73,6 +73,18 @@ class User extends Db_object {
         $sql = "SELECT * from ". self::$db_table ." where ";
         $sql .= "username = '{$username}' ";
         $sql .= "AND password = '{$password}' ";
+        $sql .= "LIMIT 1";
+
+        $result_array = self::find_by_query($sql);
+        return !empty($result_array) ? array_shift($result_array) : false;
+    }// END of verify_user function
+
+    public static function find_by_username($username) {
+        global $database;
+        $username = $database->escape_string($username);
+
+        $sql = "SELECT * from ". self::$db_table ." where ";
+        $sql .= "username = '{$username}' ";
         $sql .= "LIMIT 1";
 
         $result_array = self::find_by_query($sql);

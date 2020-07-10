@@ -48,7 +48,7 @@ if(empty($_GET['id'])) {
                 </ol>
 
                 <div class="row">
-                    <div class="col-lg-4 col-lg-offset-3">
+                    <div class="col-lg-4 col-lg-offset-3 fit-content">
                         <div class="panel panel-primary">
                             <div class="panel-heading text-center">
                                 <img class="profile-image-img img-circle img-thumbnail img-responsive" src="<?php echo $user->getProfilePicture(); ?>" alt="">

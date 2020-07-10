@@ -40,7 +40,9 @@ $users = User::find_all();
                         <i class="fa fa-users"></i> Users
                     </li>
                 </ol>
-                <p class="bg-success"><?php echo $message; ?></p>
+                <?php if(!empty($message)) : ?>
+                   <p class="bg-success"><?php echo $message; ?></p>
+                <?php endif; ?> 
                 <a href="add_user.php" class="btn btn-primary"><i class="fa fa-plus-circle"></i> Add User</a>
 
                 <div class="col-md-12">
