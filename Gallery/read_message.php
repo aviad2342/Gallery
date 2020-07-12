@@ -38,7 +38,7 @@ $to_user = User::find_by_id($message->user_id);
                                         <section>
                                             <small><strong>Date:</strong>  <?php echo $message->getDate(); ?></small>
                                             <br>
-                                            <small><strong>From:</strong> <?php echo $from_user->get_user_full_name(); ?></small>
+                                            <small><strong>From:</strong> <?php echo $from_user->get_user_full_name(). "<".$from_user->email.">"; ?></small>
                                             <br>
                                             <small><strong>To:</strong> <?php echo $to_user->get_user_full_name(); ?></small>
                                         </section>

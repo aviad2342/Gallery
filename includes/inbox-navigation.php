@@ -10,7 +10,7 @@
 <div class="inbox-body">
     <div class="mail-option">
         <div class="chk-all">
-            <input type="checkbox" id="checkall" class="mail-group-checkbox">
+            <input type="checkbox" id="checkall" class="mail-group-checkbox align-middle">
             <div class="btn-group">
                 <a data-toggle="dropdown" href="#" class="btn mini all" aria-expanded="false">
                     All

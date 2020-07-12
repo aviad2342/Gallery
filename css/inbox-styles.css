@@ -213,7 +213,7 @@ ul.inbox-pagination li {
     background: none repeat scroll 0 0 #fcfcfc;
     border: 1px solid #e7e7e7;
     border-radius: 3px !important;
-    color: #afafaf;
+    color: #2e2b2b;
     display: inline-block;
     padding: 5px 10px;
 }
@@ -381,3 +381,7 @@ ul {
     padding: 1rem;
     background-color: #efefef;
   }
+
+.align-middle {
+    vertical-align: middle;
+}
