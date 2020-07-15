@@ -69,7 +69,7 @@ if(empty($_GET['id'])) {
                     <?php foreach ($images as $image) : ?>
                         <!-- Image -->
                         <a href="<?php echo $image->picture_path(); ?>">
-                            <img src="<?php echo $image->picture_path(); ?>" alt="" title=""/>
+                            <img  src="<?php echo $image->picture_path(); ?>" alt="" title=""/>
                         </a>
                         <?php endforeach; ?> 
                     </div>

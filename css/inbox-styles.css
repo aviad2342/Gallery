@@ -71,6 +71,9 @@ a.mail-dropdown {
 .inbox-body {
     padding: 20px;
 }
+.modal-header-back {
+    background-color: blue;
+ }
 .btn-compose {
     background: none repeat scroll 0 0 #ff6c60;
     color: #fff;

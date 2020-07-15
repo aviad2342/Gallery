@@ -58,7 +58,16 @@ body {
     padding-bottom: 15px;
     line-height: 20px;
     color: #999;
+    font-size: large;
 }
+
+.badge-notify {
+    background: green;
+    position:relative;
+    top: -11px;
+    left: -13px;
+    font-size: x-small;
+ }
 
 .top-nav>li>a:hover,
 .top-nav>li>a:focus,

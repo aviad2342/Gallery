@@ -17,7 +17,7 @@ $user_messages = Message::find_user_messages($user_loged->id);
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <span class="badge badge-notify label label-success"><?php echo $new_messages; ?></span><b class="caret"></b></a>
                     <ul class="dropdown-menu message-dropdown">
                     <?php foreach ($user_messages as $user_message) : ?>
                         <li class="message-preview">
@@ -70,7 +70,7 @@ $user_messages = Message::find_user_messages($user_loged->id);
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src=<?php echo $user_loged->getProfilePicture(); ?> class="profile-image-circle img-circle"> <?php echo $user_loged->first_name." ".$user_loged->last_name ?> <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src=<?php echo $user_loged->getProfilePicture(); ?> class="profile-image-circle img-circle"> <small><?php echo $user_loged->first_name." ".$user_loged->last_name ?></small> <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
                             <a href="user_profile.php?id=<?php echo $user_loged->id; ?>"><i class="fa fa-fw fa-user"></i> Profile</a>

@@ -90,6 +90,9 @@ ul.inbox-nav {
 .inbox-divider {
     border-bottom: 1px solid #d5d8df;
 }
+.modal-header-back {
+   background-color: blue;
+}
 ul.inbox-nav li {
     display: inline-block;
     line-height: 45px;
