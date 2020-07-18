@@ -1,5 +1,20 @@
 <?php 
 
+function reArrayFiles(&$file_post) {
+
+    $file_ary = array();
+    $file_count = count($file_post['name']);
+    $file_keys = array_keys($file_post);
+
+    for ($i=0; $i<$file_count; $i++) {
+        foreach ($file_keys as $key) {
+            $file_ary[$i][$key] = $file_post[$key][$i];
+        }
+    }
+
+    return $file_ary;
+}
+
 if(isset($_POST['submit'])) {
     $date = date('Y-m-d H:i:s');
     $user_id = User::get_selected_user_id($_POST['user_id']);
@@ -9,9 +24,41 @@ if(isset($_POST['submit'])) {
     $new_message = Message::newMessage($user_id, $user_loged->id, $title, $content, $date, true);
     
     if($new_message && $new_message->save()) {
+        $message_id = $new_message->get_message_id();
+        if(!empty($_FILES['file'])){
+            $files = reArrayFiles($_FILES['file']);
+            foreach ($files as $file) {
+                $newfile = new File();
+                $newfile->message_id = $message_id;
+                $newfile->date = $date;
+                $newfile->set_file($file);
+                $newfile->save();
+            }
+        //     $filesCount = count($_FILES['file']['name']);
+        //     if($filesCount > 0){
+        //         if($filesCount == 1) {
+        //             $newfile = new File();
+        //             $newfile->message_id = $message_id;
+        //             $newfile->date = $date;
+        //             $newfile->set_file($_FILES['file']);
+        //             $newfile->save();
+        //     } else {
+        //         $files = reArrayFiles($_FILES['file']);
+        //         foreach ($files as $file) {
+        //             $newfile = new File();
+        //             $newfile->message_id = $message_id;
+        //             $newfile->date = $date;
+        //             $newfile->set_file($file);
+        //             $newfile->save();
+        //         }
+
+        //     }
+        //    }
+        }
         redirect("inbox.php");
         $session->message("<i class='fa fa-check'></i> The Messge was successfully send");
     } else {
+        redirect("inbox.php");
         $session->message("<i class='fa fa-check'></i> The Messge was successfully send");
     }
 }
@@ -28,7 +75,7 @@ if(isset($_POST['submit'])) {
                 <h4 class="modal-title">New Message</h4>
             </div>
             <div class="modal-body">
-                <form action="inbox.php" role="form" class="form-horizontal" method="post" enctype="multipart/form-data">
+                <form action="" role="form" class="form-horizontal" method="post" enctype="multipart/form-data">
                     <div class="form-group">
                         <label class="col-lg-2 control-label">To</label>
                         <div class="col-lg-10">
@@ -51,10 +98,9 @@ if(isset($_POST['submit'])) {
 
                     <div class="form-group">
                         <div class="col-lg-offset-2 col-lg-10">
-                            <span class="btn green fileinput-button">
-                            <i class="fa fa-plus fa fa-white"></i>
-                            <span>Attachment</span>
-                            <input type="file" name="files[]" multiple="">
+                            <span class="btn green fileinput-button" data-toggle="tooltip" data-placement="left" title="Attach file">
+                            <i class="fa fa-paperclip" aria-hidden="true"></i>
+                            <input type="file" id='file' name="file[]" multiple="multiple">
                             </span>
                             <button class="btn btn-send" type="submit" name="submit">Send</button>
                         </div>

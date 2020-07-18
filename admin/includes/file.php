@@ -3,7 +3,7 @@
 class File extends Db_object {
 
     protected static $db_table = "files";
-    protected static $db_table_fields = array('album_id', 'date', 'filename', 'type', 'size');
+    protected static $db_table_fields = array('message_id', 'date', 'filename', 'type', 'size');
     public $id;
     public $message_id;
     public $date;
@@ -27,7 +27,7 @@ class File extends Db_object {
 
     public function set_file($file) {
         if(empty($file) || !$file || !is_array($file)) {
-            $this->errors[] = "There was no file uploaded here";
+            $this->errors[] = "There was no file uploaded";
             return false;
         } elseif ($file['error'] != 0) {
             $this->errors[] = $this->upload_errors_array[$file['error']];
@@ -76,7 +76,7 @@ class File extends Db_object {
         }
     }// END of save function
 
-    public function delete_photo() {
+    public function delete_file() {
         if($this->delete()) {
             $target_path = SITE_ROOT . DS . 'admin' . DS . $this->file_path();
             return unlink($target_path) ? true : false;

@@ -105,6 +105,12 @@ class Message extends Db_object {
         
     }
     
+
+    public static function get_message_id() {
+        global $database;
+        return $database->insert_id();
+        
+    }
     
 
 

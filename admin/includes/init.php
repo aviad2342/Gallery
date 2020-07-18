@@ -14,6 +14,7 @@ require_once(INCLUDES_PATH.DS."photo.php");
 require_once(INCLUDES_PATH.DS."comment.php");
 require_once(INCLUDES_PATH.DS."album.php"); 
 require_once(INCLUDES_PATH.DS."image.php");
+require_once(INCLUDES_PATH.DS."file.php");
 require_once(INCLUDES_PATH.DS."message.php");  
 require_once(INCLUDES_PATH.DS."session.php");
 require_once(INCLUDES_PATH.DS."paginate.php");
