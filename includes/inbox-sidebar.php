@@ -14,7 +14,7 @@ $active_tab = $uri[count($uri)-1];
     </div>
     <div class="inbox-body">
         <a href="#myModal" data-toggle="modal" title="Compose"  class="btn btn-compose">
-        <i class="fa fa-pencil-alt"></i> New Mail
+        <i class="fa fa-pencil-alt"></i> New Message
         </a>
 
     <!-- Inbox Compose Modal -->

@@ -19,6 +19,7 @@
 
     <!-- Custom CSS -->
     <link href="css/inbox-styles.css" rel="stylesheet">
+    <link href="css/fileinput.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <!-- <link href="./admin/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->

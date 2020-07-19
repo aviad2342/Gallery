@@ -69,6 +69,11 @@ $(document).ready(function(){
         });
     });
 
+    $("#filepreview").fileinput({
+        theme: "fa",
+        deleteUrl: "#",
+        showUpload: false
+    });
     
 });
 

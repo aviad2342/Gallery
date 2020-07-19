@@ -104,6 +104,12 @@ if(isset($_POST['submit'])) {
                             </span>
                         </div>
                     </div>
+
+                    <div class="file-loading">
+                         <input id="filepreview" type="file" name="filepreview[]" data-preview-file-type="text" multiple="multiple">
+                    </div>
+                    
+
                     <div class="form-group">
                         <div class="col-lg-offset-2 col-lg-10">
                             <button class="btn btn-send" type="submit" name="submit">Send</button>
