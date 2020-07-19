@@ -2,7 +2,7 @@
         <hr>
 
         <!-- Footer -->
-        <footer>
+        <footer class="page-footer font-small blue">
             <div class="row">
                 <div class="col-lg-12">
                     <p class="text-center">Copyright &copy; Aviad Ben Hayun</p>

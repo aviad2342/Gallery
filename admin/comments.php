@@ -34,10 +34,10 @@ $comments = Comment::find_all();
         </h1>
         <ol class="breadcrumb">
             <li>
-                <i class="fa fa-dashboard"></i>  <a href="index.php">Dashboard</a>
+                <i class="fa fa-tachometer-alt"></i>  <a href="index.php">Dashboard</a>
             </li>
             <li class="active">
-                <i class="fa fa-comment"></i> Comments
+                <i class="fa fa-comments"></i> Comments
             </li>
         </ol>
         <?php if(!empty($message)) : ?>

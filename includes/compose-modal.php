@@ -102,6 +102,10 @@ if(isset($_POST['submit'])) {
                             <i class="fa fa-paperclip" aria-hidden="true"></i>
                             <input type="file" id='file' name="file[]" multiple="multiple">
                             </span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-offset-2 col-lg-10">
                             <button class="btn btn-send" type="submit" name="submit">Send</button>
                         </div>
                     </div>

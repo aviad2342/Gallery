@@ -1,5 +1,5 @@
 <div class="inbox-head">
-    <h3><a href="index.php">Home <i class="fa fa-angle-right"></i></a> Inbox</h3>
+    <h3></i><a href="index.php" class="inbox-head-title">Home <i class="fa fa-angle-right"></i></a> Inbox</h3>
     <form action="#" class="pull-right position">
         <div class="input-append">
             <input type="text" class="sr-input" id="myInput" onkeyup="filterMails()" placeholder="Search Mail...">
@@ -26,7 +26,7 @@
 
         <div class="btn-group">
             <a data-original-title="Refresh" data-placement="top" data-toggle="dropdown" href="inbox.php" class="btn mini tooltips">
-                <i class=" fa fa-refresh"></i>
+                <i class=" fa fa-sync"></i>
             </a>
         </div>
         <div class="btn-group hidden-phone">

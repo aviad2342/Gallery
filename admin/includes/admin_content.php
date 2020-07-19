@@ -9,7 +9,7 @@
         </h1>
         <ol class="breadcrumb">
             <li class="active">
-                <i class="fa fa-dashboard"></i> Dashboard
+                <i class="fa fa-tachometer-alt"></i> Dashboard
             </li>
         </ol>
 
@@ -42,7 +42,7 @@
                   <div class="panel-heading">
                       <div class="row">
                           <div class="col-xs-3">
-                              <i class="fa fa-photo fa-5x"></i>
+                              <i class="fa fa-image fa-5x"></i>
                           </div>
                           <div class="col-xs-9 text-right">
                               <div class="huge-panel"><?php echo Photo::countRecords(); ?></div>

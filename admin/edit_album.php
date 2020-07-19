@@ -51,13 +51,13 @@ if(empty($_GET['id'])) {
         </h1>
         <ol class="breadcrumb">
             <li>
-                <i class="fa fa-dashboard"></i>  <a href="index.php">Dashboard</a>
+                <i class="fa fa-tachometer-alt"></i>  <a href="index.php">Dashboard</a>
             </li>
             <li>
                 <i class="fa fa-th"></i>  <a href="albums.php">Albums</a>
             </li>
             <li class="active">
-                <i class="fa fa-pencil"></i> Edit Album
+                <i class="fa fa-pencil-alt"></i> Edit Album
             </li>
         </ol>
         <div class="row">

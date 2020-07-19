@@ -56,7 +56,7 @@ if(isset($_POST['submit'])) {
         </h1>
         <ol class="breadcrumb">
             <li>
-                <i class="fa fa-dashboard"></i>  <a href="index.php">Dashboard</a>
+                <i class="fa fa-tachometer-alt"></i>  <a href="index.php">Dashboard</a>
             </li>
             <li>
                 <i class="fa fa-th"></i>  <a href="albums.php">Albums</a>

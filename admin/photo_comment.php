@@ -38,10 +38,10 @@ $comments = Comment::find_Comments_photo($_GET['id']);
         </h1>
         <ol class="breadcrumb">
             <li>
-                <i class="fa fa-dashboard"></i>  <a href="index.php">Dashboard</a>
+                <i class="fa fa-tachometer-alt"></i>  <a href="index.php">Dashboard</a>
             </li>
             <li>
-                <i class="fa fa-picture-o"></i> <a href="photos.php">Photos</a>
+                <i class="fa fa-image"></i> <a href="photos.php">Photos</a>
             </li>
             <li class="active">
                 <i class="fa fa-comment"></i> Comments

@@ -1,7 +1,7 @@
 <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                     <li>
-                        <a href="index.php"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                        <a href="index.php"><i class="fa fa-fw fa-tachometer-alt"></i> Dashboard</a>
                     </li>
                     <li>
                         <a href="users.php"><i class="fa fa-users"></i> Users</a>
@@ -13,10 +13,10 @@
                         <a href="albums.php"><i class="fa fa-th"></i> Albums</a>
                     </li>
                     <li>
-                        <a href="photos.php"><i class="fa fa-photo"></i> Photos</a>
+                        <a href="photos.php"><i class="fa fa-image"></i> Photos</a>
                     </li>
                     <li>
-                        <a href="comments.php"><i class="fa fa-comments-o"></i> Comments</a>
+                        <a href="comments.php"><i class="fa fa-comments"></i> Comments</a>
                     </li>
                 </ul>
             </div>

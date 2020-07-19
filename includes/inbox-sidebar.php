@@ -14,7 +14,7 @@ $active_tab = $uri[count($uri)-1];
     </div>
     <div class="inbox-body">
         <a href="#myModal" data-toggle="modal" title="Compose"  class="btn btn-compose">
-        <i class="fa fa-pencil "></i> New Mail
+        <i class="fa fa-pencil-alt"></i> New Mail
         </a>
 
     <!-- Inbox Compose Modal -->
@@ -27,16 +27,16 @@ $active_tab = $uri[count($uri)-1];
 
         </li>
         <li class="<?php echo ($active_tab == "sent_messages.php") ? "active" : ""; ?>">
-            <a href="sent_messages.php"><i class="fa fa-envelope-o"></i> Sent Mail</a>
+            <a href="sent_messages.php"><i class="fa fa-envelope"></i> Sent Mail</a>
         </li>
         <li>
-            <a href="#"><i class="fa fa-bookmark-o"></i> somthing</a>
+            <a href="#"><i class="fa fa-bookmark"></i> somthing</a>
         </li>
         <li>
-            <a href="#"><i class=" fa fa-external-link"></i> Drafts <span class="label label-info pull-right">30</span></a>
+            <a href="#"><i class=" fa fa-external-link-alt"></i> Drafts <span class="label label-info pull-right">30</span></a>
         </li>
         <li>
-            <a href="#"><i class=" fa fa-trash-o"></i> Trash</a>
+            <a href="#"><i class=" fa fa-trash"></i> Trash</a>
         </li>
     </ul>
     <ul class="nav nav-pills nav-stacked labels-info inbox-divider">

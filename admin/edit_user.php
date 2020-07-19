@@ -71,7 +71,7 @@ if(isset($_POST['update'])) {
         </h1>
         <ol class="breadcrumb">
             <li>
-                <i class="fa fa-dashboard"></i>  <a href="index.php">Dashboard</a>
+                <i class="fa fa-tachometer-alt"></i>  <a href="index.php">Dashboard</a>
             </li>
             <li>
                 <i class="fa fa-users"></i>  <a href="users.php">Users</a>

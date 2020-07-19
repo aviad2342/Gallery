@@ -34,7 +34,7 @@ $albums = Album::find_user_albums($session->user_id);
                 </h1>
                 <ol class="breadcrumb">
                     <li>
-                        <i class="fa fa-dashboard"></i>  <a href="index.php">Dashboard</a>
+                        <i class="fa fa-tachometer-alt"></i>  <a href="index.php">Dashboard</a>
                     </li>
                     <li class="active">
                         <i class="fa fa-th"></i> Albums

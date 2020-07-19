@@ -54,13 +54,13 @@ if(isset($_POST['update'])) {
         </h1>
         <ol class="breadcrumb">
             <li>
-                <i class="fa fa-dashboard"></i>  <a href="index.php">Dashboard</a>
+                <i class="fa fa-tachometer-alt"></i>  <a href="index.php">Dashboard</a>
             </li>
             <li>
-                <i class="fa fa-comment"></i>  <a href="comments.php">Comments</a>
+                <i class="fa fa-comments"></i>  <a href="comments.php">Comments</a>
             </li>
             <li class="active">
-            <i class="fa fa-comment"></i>  Edit Comments
+            <i class="fa fa-comment"></i>  Edit Comment
             </li>
         </ol>
 
