@@ -43,6 +43,8 @@
 
 .file-input, .file-loading:before, .btn-file, .file-caption, .file-preview, .krajee-default.file-preview-frame, .krajee-default .file-thumbnail-footer, .file-zoom-dialog .modal-dialog {
     position: relative;
+    width: 94%;
+    margin-left: 7px;
 }
 
 .file-error-message pre, .file-error-message ul, .krajee-default .file-actions, .krajee-default .file-other-error {

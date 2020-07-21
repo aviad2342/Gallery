@@ -25,8 +25,8 @@ if(isset($_POST['submit'])) {
     
     if($new_message && $new_message->save()) {
         $message_id = $new_message->get_message_id();
-        if(!empty($_FILES['file'])){
-            $files = reArrayFiles($_FILES['file']);
+        if(!empty($_FILES['filepreview'])){
+            $files = reArrayFiles($_FILES['filepreview']);
             foreach ($files as $file) {
                 $newfile = new File();
                 $newfile->message_id = $message_id;
@@ -68,7 +68,7 @@ if(isset($_POST['submit'])) {
 
 <!-- Modal -->
 <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade" style="display: none;">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header text-center bg-primary">
                 <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
@@ -91,24 +91,25 @@ if(isset($_POST['submit'])) {
                     <div class="form-group">
                         <label class="col-lg-2 control-label">Message</label>
                         <div class="col-lg-10">
-                            <div id="myNicPanel"></div>
-                            <textarea rows="10" cols="30" class="form-control" name="content" style="width: 470px; height: 100px;"></textarea>
+                            <!-- <div id="myNicPanel"></div> -->
+                            <textarea rows="10" cols="30" class="form-control" name="content" style="width: 750px; height: 100px;"></textarea>
                         </div>
                     </div>
 
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                         <div class="col-lg-offset-2 col-lg-10">
                             <span class="btn green fileinput-button" data-toggle="tooltip" data-placement="left" title="Attach file">
                             <i class="fa fa-paperclip" aria-hidden="true"></i>
                             <input type="file" id='file' name="file[]" multiple="multiple">
                             </span>
                         </div>
-                    </div>
+                    </div> -->
 
-                    <div class="file-loading">
-                         <input id="filepreview" type="file" name="filepreview[]" data-preview-file-type="text" multiple="multiple">
+                    <div class="form-group">
+                        <div class="file-loading">
+                            <input id="filepreview" type="file" name="filepreview[]" data-preview-file-type="text" multiple="multiple">
+                        </div>
                     </div>
-                    
 
                     <div class="form-group">
                         <div class="col-lg-offset-2 col-lg-10">
