@@ -19,9 +19,9 @@ $count = count($messages);
                                   <td class="inbox-small-cells">
                                       <input type="checkbox" name="marked" class="mail-checkbox" data="<?php echo $message->id; ?>">
                                   </td>
-                                  <td onclick="readMessage(<?php echo $message->id; ?>);" class="inbox-small-cells"><i class="fa fa-star"></i></td>
-                                  <td onclick="readMessage(<?php echo $message->id; ?>);" class="view-message  dont-show"><?php echo substr($message->title,0,20); ?></td>
-                                  <td onclick="readMessage(<?php echo $message->id; ?>);" class="view-message "><?php echo substr("$message->content",0,25); ?></td>
+                                  <td onclick="readMessage(<?php echo $message->id; ?>);" class="view-message  dont-show"><?php echo User::find_by_id($message->user_id)->get_user_full_name(); ?></td>
+                                  <td onclick="" class="inbox-small-cells"><i class="fa fa-star"></i></td>
+                                  <td onclick="readMessage(<?php echo $message->id; ?>);" class="view-message "><?php echo substr($message->title,0,20); ?></td>
                                   <td class="view-message  inbox-small-cells"><i class="fa fa-paperclip"></i></td>
                                   <td onclick="readMessage(<?php echo $message->id; ?>);" class="view-message  text-right"><?php echo $message->getShortDate(); ?></td>
                               </tr>

@@ -3,7 +3,7 @@
 
 $page = !empty($_GET['page']) ? (int)$_GET['page'] : 1;
 
-$page_items = 2;
+$page_items = 4;
 
 $page_total_items = Photo::countRecords();
 
