@@ -92,7 +92,7 @@ if(isset($_POST['submit'])) {
                         <label class="col-lg-2 control-label">Message</label>
                         <div class="col-lg-10">
                             <!-- <div id="myNicPanel"></div> -->
-                            <textarea rows="10" cols="30" class="form-control" name="content" style="width: 750px; height: 100px;"></textarea>
+                            <textarea rows="10" cols="30" class="form-control" name="content" style="width: 610px; height: 100px;"></textarea>
                         </div>
                     </div>
 

@@ -23,20 +23,19 @@ $active_tab = $uri[count($uri)-1];
     </div>
     <ul class="inbox-nav inbox-divider">
         <li class="<?php echo ($active_tab == "inbox.php") ? "active" : ""; ?>">
-            <a href="inbox.php"><i class="fa fa-inbox"></i> Inbox <span class="label label-danger pull-right"><?php echo Message::count_user_new_messages($user_loged->id); ?></span></a>
-
+            <a href="inbox.php"><i class="fa fa-inbox"></i>Inbox <span class="label label-danger pull-right"><?php echo Message::count_user_new_messages($user_loged->id); ?></span></a>
         </li>
         <li class="<?php echo ($active_tab == "sent_messages.php") ? "active" : ""; ?>">
-            <a href="sent_messages.php"><i class="fa fa-envelope"></i> Sent Mail</a>
+            <a href="sent_messages.php"><i class="fa fa-envelope"></i>Sent Messages</a>
         </li>
         <li>
-            <a href="#"><i class="fa fa-bookmark"></i> somthing</a>
+            <a href="#"><i class="fa fa-bookmark"></i>Saved</a>
         </li>
         <li>
-            <a href="#"><i class=" fa fa-external-link-alt"></i> Drafts <span class="label label-info pull-right">30</span></a>
+            <a href="#"><i class=" fa fa-external-link-alt"></i>Drafts <span class="label label-info pull-right">30</span></a>
         </li>
         <li>
-            <a href="#"><i class=" fa fa-trash"></i> Trash</a>
+            <a href="#"><i class=" fa fa-trash"></i>Trash</a>
         </li>
     </ul>
     <ul class="nav nav-pills nav-stacked labels-info inbox-divider">

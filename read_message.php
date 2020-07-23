@@ -13,6 +13,7 @@ $message->update();
 $from_user = User::find_by_id($message->author_id);
 $to_user = User::find_by_id($message->user_id);
 
+$files = File::find_attach_file($message->id);
 
 
 ?>
@@ -53,6 +54,9 @@ $to_user = User::find_by_id($message->user_id);
                                     </body>
                                 </div>
                                 <hr>
+                                <?php foreach ($files as $file) : ?>
+                                    <p><a href=<?php echo 'admin/download.php?file=' . urlencode($file->filename);?>><?php echo $file->file_type_view() .' '. explode("-", $file->filename)[1]; ?></a></p>
+                                <?php endforeach; ?> 
                                 <div class="footer">
                                     <section>
                                         <footer>

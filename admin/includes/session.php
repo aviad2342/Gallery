@@ -9,7 +9,7 @@ class Session {
 
     function __construct() {
         session_start();
-        $this->vivsitor_count();
+        $this->visitor_count();
         $this->isLogin();
         $this->check_message();
     }
@@ -22,7 +22,7 @@ class Session {
         }
     }
 
-    public function vivsitor_count() {
+    public function visitor_count() {
         if(isset($_SESSION['count'])) {
             return $this->count = $_SESSION['count']++;
             
